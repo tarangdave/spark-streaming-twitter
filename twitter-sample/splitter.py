@@ -7,7 +7,7 @@ with open('tweets_tech.csv') as bigfile:
             if smallfile:
                 count += 1
                 smallfile.close()
-            small_filename = 'tweets_{}.txt'.format(count)
+            small_filename = 'tweets_{}.csv'.format(count)
             smallfile = open(small_filename, "w")
         smallfile.write(line)
     if smallfile:
